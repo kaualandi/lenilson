@@ -1,0 +1,44 @@
+@import '../../variables.scss';
+
+#navbar {
+    margin-right: auto;
+    margin-left: auto;
+    @include glassEffect($background-two);
+    border-radius: 0 0 1rem 1rem;
+    .container {
+        .navbar-toggler {
+            border: none;
+            background-color: transparent;
+            @include transition();
+            font-size: 1.4rem;
+            transform: rotate(90deg);
+            color: $text-color;
+            &:focus {
+                outline: none;
+                box-shadow: none;
+            }
+            &.collapsed {
+                transform: rotate(0deg);
+            }
+            span {
+                font-size: 1.3rem;
+            }
+        }
+        #navbar-nav {
+            justify-content: space-around;
+            .navbar-nav {
+                .nav-item {
+                    margin-right: auto;
+                    margin-left: auto;
+                    button {
+                        color: $text-color;
+                        @include transition();
+                        &:hover {
+                            transform: translateY(-3px) scale(1.1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

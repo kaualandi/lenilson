@@ -1,0 +1,14 @@
+@mixin transition() {
+    transition: all .3s ease-in-out;
+}
+@mixin glassEffect($color) {
+    background-color: rgba($color, $alpha: 0.5);
+    backdrop-filter: blur(10px);
+}
+
+$text-color: #181818;
+$hover-color: #000000;
+$background: #fafafa;
+$background-two: #ececec;
+$background-hover: #cfcfcf;
+$border-radius: 1rem;

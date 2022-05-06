@@ -1,0 +1,79 @@
+@import '../../variables.scss';
+
+$breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px
+);
+
+#academy {
+    .content-section {
+        .academy-items {
+            .academy-item {
+                display: flex;
+                gap: 1rem;
+                &:last-of-type {
+                    .academy-item-image .icon::after {
+                        display: none;
+                    }
+                }
+                position: relative;
+                .academy-item-image {
+                    display: flex;
+                    justify-content: flex-end;
+                    .icon {
+                        font-size: 2rem;
+                        background-color: $background-hover;
+                        width: 3.5rem;
+                        height: 3.5rem;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 50%;
+                        &::after {
+                            content: '';
+                            width: 5px;
+                            height: calc(100% - 3.5rem);
+                            background-color: $background-hover;
+                            position: absolute;
+                            bottom: 0;
+                        }
+                    }
+                }
+                .academy-item-content h2, .academy-item-content h3 {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #academy {
+        .content-section {
+            .academy-items {
+                display: flex;
+                justify-content: center;
+                .academy-item {
+                    display: block;
+                    padding-right: 2rem;
+                    &:last-of-type {
+                        padding-right: 0;
+                    }
+                    .academy-item-image {
+                        display: block;
+                        .icon::after {
+                            height: 5px;
+                            width: calc(100% - 3.5rem);
+                            bottom: inherit;
+                            right: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

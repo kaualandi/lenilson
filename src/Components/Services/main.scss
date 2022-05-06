@@ -1,0 +1,24 @@
+@import '../../variables.scss';
+#services {
+    .content-section {
+        .owl-theme {
+            .item {
+                padding: 1rem;
+                background-color: $background-two;
+                border-radius: $border-radius;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                img, video {
+                    border-radius: $border-radius;
+                    margin: 0 auto;
+                    width: 400px;
+                    height: 400px;
+                    object-fit: cover;
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+    }
+}

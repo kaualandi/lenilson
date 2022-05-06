@@ -1,0 +1,60 @@
+@import '../../variables.scss';
+
+#contact {
+    .content-section {
+        .row {
+            align-items: center;
+            .contact-info {
+                .social-links {
+                    list-style: none;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 0;
+                    li {
+                        a {
+                            color: $text-color;
+                            display: flex;
+                            align-items: center;
+                            gap: 1rem;
+                            text-decoration: none;
+                            svg {
+                                font-size: 1.5rem;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .contact-form {
+                .form-group {
+                    margin-bottom: .5rem;
+                    input, textarea, button {
+                        border-radius: $border-radius;
+                        background: $background-two;
+                        resize: none;
+                        color: $text-color;
+                        border: 1px solid #ced4da;
+                        &:focus {
+                            box-shadow: 0 0 0 0.25rem $background-hover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    #contact {
+        .content-section {
+            .contact-info {
+                .social-links {
+                    li+li {
+                        margin-top: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}

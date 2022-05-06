@@ -1,0 +1,26 @@
+#home {
+    background-image: url('../../Images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    max-height: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    .container {
+        .image {
+            max-width: 250px;
+            width: 40vw;
+            margin: 0 auto;
+        }
+        .text {
+            color: #fff;
+            p {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
