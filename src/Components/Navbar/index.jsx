@@ -19,7 +19,7 @@ export default function Navigation() {
     }, []);
 
     return (
-        <Navbar id="navbar" fixed="top" expand="sm">
+        <Navbar data-aos-delay="500" data-aos="fade-down" id="navbar" fixed="top" expand="sm">
             <Container>
                 <Navbar.Toggle className="mx-auto" aria-controls="navbar-nav" />
                 <Navbar.Collapse id="navbar-nav">

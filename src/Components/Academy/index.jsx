@@ -33,13 +33,13 @@ export default function Academy() {
     return (
         <div className="section" id="academy">
             <Container>
-                <div className="header-section">
+                <div data-aos="fade-up" className="header-section">
                     <h1>Acadêmico</h1>
                 </div>
                 <div className="content-section">
                     <div className="academy-items">
                         {academy.map(item => (
-                            <div className="academy-item" key={item.id}>
+                            <div data-aos-delay={100 + (item.id * 100)} data-aos="fade-up" className="academy-item" key={item.id}>
                                 <div className="academy-item-image">
                                     <span className="icon">{Icons.academic}</span>
                                 </div>

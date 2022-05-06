@@ -59,7 +59,7 @@ export default function Services() {
     if(isLoading) return (
         <div className="section" id="services">
             <Container>
-                <div className="header-section">
+                <div data-aos="fade-up" className="header-section">
                     <h1>Serviços Prestados</h1>
                 </div>
                 <div className="content-section">
@@ -73,7 +73,7 @@ export default function Services() {
     if(isError) return (
         <div className="section" id="services">
             <Container>
-                <div className="header-section">
+                <div data-aos="fade-up" className="header-section">
                     <h1>Serviços Prestados</h1>
                 </div>
                 <div className="content-section">
@@ -88,7 +88,7 @@ export default function Services() {
     return (
         <div className="section" id="services">
             <Container>
-                <div className="header-section">
+                <div data-aos="fade-up" className="header-section">
                     <h1>Serviços Prestados</h1>
                 </div>
                 <div className="content-section">
@@ -103,16 +103,16 @@ export default function Services() {
 
                             if (mediaType === 'IMAGE' || mediaType === 'CAROUSEL_ALBUM') {
                                 element = (
-                                    <div className="item" key={picture.id}>
-                                        <img src={mediaUrl} alt={caption}/>
-                                        <a className="button alt icon" href={permalink} target="_blank" rel="noreferrer">{Icons.instagram} Ver no Instagram</a>
+                                    <div data-aos-delay="100" data-aos="fade-up" className="item" key={picture.id}>
+                                        <img data-aos-delay="200" data-aos="zoom-in" src={mediaUrl} alt={caption}/>
+                                        <a data-aos-delay="400" data-aos="fade-right" className="button alt icon" href={permalink} target="_blank" rel="noreferrer">{Icons.instagram} Ver no Instagram</a>
                                     </div>
                                 )
                             } else if (mediaType === 'VIDEO') {
                                 element = (
-                                    <div className="item" key={picture.id}>
-                                        <video src={mediaUrl} controls/>
-                                        <a className="button alt icon" href={permalink} target="_blank" rel="noreferrer">{Icons.instagram} Ver no Instagram</a>
+                                    <div data-aos-delay="100" data-aos="fade-up" className="item" key={picture.id}>
+                                        <video data-aos-delay="200" data-aos="zoom-in" src={mediaUrl} controls/>
+                                        <a data-aos-delay="400" data-aos="fade-right" className="button alt icon" href={permalink} target="_blank" rel="noreferrer">{Icons.instagram} Ver no Instagram</a>
                                     </div>
                                 )
                             }

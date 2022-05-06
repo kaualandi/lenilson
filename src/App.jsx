@@ -4,8 +4,15 @@ import Services from "./Components/Services";
 import Academy from "./Components/Academy";
 import Contact from "./Components/Contact";
 import './App.scss';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function App() {
+
+  AOS.init({
+    duration: 1000
+  });
+
   return (
     <div>
       <Navbar />
