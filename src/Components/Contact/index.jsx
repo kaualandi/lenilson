@@ -2,12 +2,19 @@ import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Icons from "../../Images/Icons";
 import './main.scss';
+import toast, { Toaster } from 'react-hot-toast';
 
 export default function Contact() {
     const [submiting, setSubmiting] = useState(false);
 
+    const query = new URLSearchParams(window.location.href.split('?')[1]);
+    if(query.has('emailsubmited')) {
+        toast.success('E-mail enviado com sucesso!');
+    }
+
     return (
         <div id="contact" className="section">
+            <Toaster gutter={10}/>
             <Container>
                 <div data-aos="fade-up" className="header-section">
                     <h1>Vamos trabalhar juntos?</h1>

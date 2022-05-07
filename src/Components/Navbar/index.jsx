@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, {  } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import Icons from "../../Images/Icons";
 import './main.scss';
@@ -9,14 +9,6 @@ export default function Navigation() {
             behavior: 'smooth'
         });
     }
-
-    
-    useEffect(() => {
-        const query = new URLSearchParams(window.location.href.split('?')[1]);
-        if(query.has('emailsubmited')) {
-            console.log('email enviado');
-        }
-    }, []);
 
     return (
         <Navbar data-aos-delay="500" data-aos="fade-down" id="navbar" fixed="top" expand="sm">
