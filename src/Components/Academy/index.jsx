@@ -13,18 +13,14 @@ export default function Academy() {
                 title: 'Engenharia Elétrica',
                 type: 'Graduação',
                 location: 'Unopar',
-                time: "Janeiro 2022 - Cursando",
-                hours: '103 horas',
-                description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas eveniet adipisci perferendis sunt amet soluta, tenetur consectetur, officia eligendi porro voluptate ratione! Iusto, a dolorum? Sint voluptate doloribus in exercitationem.'
+                hours: '103 horas - Cursando',
             },
             {
                 id: 2,
                 title: 'Eletricista Predial',
                 type: 'Curso Técnico',
                 location: 'Instituto Ser',
-                time: "Fevereiro 2021 - Setembro 2021",
                 hours: '54 horas',
-                description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas eveniet adipisci perferendis sunt amet soluta, tenetur consectetur, officia eligendi porro voluptate ratione! Iusto, a dolorum? Sint voluptate doloribus in exercitationem.'
             }
         ]);
     }, []);
@@ -47,9 +43,7 @@ export default function Academy() {
                                     <h2>{item.title}</h2>
                                     <p>
                                         <span className="fw-bold">{item.type} - {item.location}</span><br/>
-                                        <span>{item.time}</span><br/>
                                         <span>{item.hours}</span><br/>
-                                        <span>{item.description}</span>
                                     </p>
                                 </div>
                             </div>

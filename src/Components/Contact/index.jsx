@@ -48,19 +48,19 @@ export default function Contact() {
                                     <label htmlFor="name">Nome</label>
                                     <input required name="Nome" type="text" className="form-control" id="name" placeholder="Digite seu nome" />
                                 </div>
-                                <div data-aos-delay="150" data-aos="fade-up" className="form-group">
+                                <div data-aos-delay="100" data-aos="fade-up" className="form-group">
                                     <label htmlFor="email">E-mail</label>
                                     <input required name="E-mail" type="email" className="form-control" id="email" placeholder="Digite seu e-mail" />
                                 </div>
-                                <div data-aos-delay="200" data-aos="fade-up" className="form-group">
+                                <div data-aos-delay="100" data-aos="fade-up" className="form-group">
                                     <label htmlFor="phone">Telefone</label>
                                     <input required name="Telefone" type="tel" maxLength="11" className="form-control" id="phone" placeholder="Digite seu telefone" />
                                 </div>
-                                <div data-aos-delay="250" data-aos="fade-up" className="form-group">
+                                <div data-aos-delay="100" data-aos="fade-up" className="form-group">
                                     <label htmlFor="message">Mensagem</label>
                                     <textarea required name="Mensagem" className="form-control" id="message" rows="3" placeholder="Digite sua mensagem" />
                                 </div>
-                                <div data-aos-delay="300" data-aos="fade-up" className="form-group">
+                                <div data-aos-delay="100" data-aos="fade-up" className="form-group">
                                     <button type="submit" className="button d-block mx-auto"><span className="icon">
                                         {submiting ? Icons.loading : Icons.arrowCircleRight}
                                     </span> Enviar</button>
