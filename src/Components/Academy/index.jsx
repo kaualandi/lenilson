@@ -13,21 +13,21 @@ export default function Academy() {
                 title: 'Engenharia Elétrica',
                 type: 'Graduação',
                 location: 'UNEC - Caratinga MG',
-                hours: '103 horas - Cursando',
+                hours: '1/10 períodos - Cursando',
             },
             {
                 id: 2,
-                title: 'Eletricista Predial',
+                title: 'Eletrotécnica',
                 type: 'Curso Técnico',
                 location: 'Instituto P & C',
-                hours: '54 horas',
+                hours: '1280 horas',
             },
             {
                 id: 3,
                 title: 'Eletricista Predial',
                 type: 'Curso',
                 location: 'Instituto Ser',
-                hours: '41 horas',
+                hours: '96 horas',
             }
         ]);
     }, []);
