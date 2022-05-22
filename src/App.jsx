@@ -22,6 +22,7 @@ function App() {
       <Contact />
       <div id="footer" className="text-center">
         <p>&copy; Todos os direitos reservados</p>
+        <p>41.274.311/0001-26</p>
       </div>
     </div>
   );
