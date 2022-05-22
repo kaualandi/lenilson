@@ -18,9 +18,16 @@ export default function Academy() {
             {
                 id: 2,
                 title: 'Eletricista Predial',
-                type: 'Curso',
+                type: 'Curso Técnico',
                 location: 'Instituto P & C',
                 hours: '54 horas',
+            },
+            {
+                id: 3,
+                title: 'Eletricista Predial',
+                type: 'Curso',
+                location: 'Instituto Ser',
+                hours: '41 horas',
             }
         ]);
     }, []);
