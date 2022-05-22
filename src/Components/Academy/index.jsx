@@ -12,14 +12,14 @@ export default function Academy() {
                 id: 1,
                 title: 'Engenharia Elétrica',
                 type: 'Graduação',
-                location: 'Unopar',
+                location: 'UNEC - Caratinga MG',
                 hours: '103 horas - Cursando',
             },
             {
                 id: 2,
                 title: 'Eletricista Predial',
-                type: 'Curso Técnico',
-                location: 'Instituto Ser',
+                type: 'Curso',
+                location: 'Instituto P & C',
                 hours: '54 horas',
             }
         ]);
