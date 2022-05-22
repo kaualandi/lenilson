@@ -10,7 +10,7 @@ export default function Pillar() {
                     <div className="pillars">
                         <div className="row">
                             <div className="col-md-4">
-                                <div className="pillar-item text-center">
+                                <div data-aos-delay="100" data-aos="fade-up" className="pillar-item text-center">
                                     <div className="pillar-item-image">
                                         <span className="icon fs-1">{Icons.sheild}</span>
                                     </div>
@@ -21,7 +21,7 @@ export default function Pillar() {
                                 </div>
                             </div>
                             <div className="col-md-4">
-                                <div className="pillar-item text-center">
+                                <div data-aos-delay="200" data-aos="fade-up" className="pillar-item text-center">
                                     <div className="pillar-item-image">
                                         <span className="icon fs-1">{Icons.checkBadge}</span>
                                     </div>
@@ -32,7 +32,7 @@ export default function Pillar() {
                                 </div>
                             </div>
                             <div className="col-md-4">
-                                <div className="pillar-item text-center">
+                                <div data-aos-delay="300" data-aos="fade-up" className="pillar-item text-center">
                                     <div className="pillar-item-image">
                                         <span className="icon fs-1">{Icons.sparkles}</span>
                                     </div>
