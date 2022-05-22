@@ -34,7 +34,7 @@ export default function Services() {
         nav: false,
         loop: true,
         dots: true,
-        autoplay: true,
+        autoplay: false,
         smartSpeed: 1000,
         responsive: {
             0: {
