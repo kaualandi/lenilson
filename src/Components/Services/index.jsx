@@ -5,11 +5,11 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 import {Container} from "react-bootstrap";
 import axios from "axios";
 import Icons from '../../Images/Icons';
-import './main.scss'
+import './main.scss';
 
 export default function Services() {
     const [instagramCarrouselPictures, setInstagramCarrouselPictures] = useState([]);
-    const token = 'IGQVJYZAFJLSWI1NWc1OFhDTUZAoLV81d29JMXRvSGhaN1ExV29wQXIxU2w5ZADhub1BIUUFFWFl0LTYybFMyU0hIcFJDMWdkVzBEZA0JpbDBSU3c2a2ZAWYVE0M2ZAhMFpHdUhOdk9UMWJLcS1hUk5rc0ZAYMAZDZD';
+    const token = process.env.TOKEN;
     const instagramUrl = `https://graph.instagram.com/me/media?access_token=${token}&fields=id,media_type,media_url,caption,permalink,thumbnail_url,timestamp,username`;
     const [isLoading, setIsLoading] = useState(false);
     const [isError, setIsError] = useState(false);
