@@ -9,7 +9,7 @@ import './main.scss'
 
 export default function Services() {
     const [instagramCarrouselPictures, setInstagramCarrouselPictures] = useState([]);
-    const token = 'IGQVJXQ2tnejVxTzBDVlFUWDY4bFAxb09pRnpYaXgzcFZASUGgxQWpnMlhHQzFJZAkxEMzhQVmVuOURpZAWtIeUtSMTNEcUJ6dFhKNFlwSm5UaVAtVVUxZADlsOTl6UUVYazNMZAGNCS0VHVjV6cURENmNUNQZDZD';
+    const token = 'IGQVJYZAFJLSWI1NWc1OFhDTUZAoLV81d29JMXRvSGhaN1ExV29wQXIxU2w5ZADhub1BIUUFFWFl0LTYybFMyU0hIcFJDMWdkVzBEZA0JpbDBSU3c2a2ZAWYVE0M2ZAhMFpHdUhOdk9UMWJLcS1hUk5rc0ZAYMAZDZD';
     const instagramUrl = `https://graph.instagram.com/me/media?access_token=${token}&fields=id,media_type,media_url,caption,permalink,thumbnail_url,timestamp,username`;
     const [isLoading, setIsLoading] = useState(false);
     const [isError, setIsError] = useState(false);
